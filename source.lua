@@ -7395,7 +7395,7 @@ Teext = [[
 ⌔ ⍒ مجوهراتي -› لعرض عدد الارباح
 ⌔ ⍒ بيع مجوهراتي + العدد
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Teext) 
 end
@@ -7954,7 +7954,7 @@ Text = [[
 
  *. source Yosef-lbban2 *
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
- . [Source Channel .](https://t.me/yousef_labban1)
+ . [Source Channel .](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 
  . [The Developer .](https://t.me/yousef_labban)
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
@@ -8001,7 +8001,7 @@ Text = [[
 
 ⌔ ⍒ م6 -› اوآمر مطور اساسي
  ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8048,7 +8048,7 @@ Text = [[
 ⌔ ⍒ الكلايش
 ⌔ ⍒ السيلفي
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉•• 
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8099,7 +8099,7 @@ Text = [[
 
 ⌔ ⍒ ضع تكرار + العدد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8155,7 +8155,7 @@ Text = [[
 ⌔ ⍒ مسح المطرودين
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8205,7 +8205,7 @@ Text = [[
 ⌔ ⍒  تفعيل/تعطيل اوامر التحشيش
 ⌔ ⍒  تفعيل/تعطيل الرابط/جلب الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8258,7 +8258,7 @@ Text = [[
 ⌔ ⍒  لعمل تاك للكل ~ all@ او all
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8318,7 +8318,7 @@ Text = [[
 ⌔ ⍒ رفع النسخه الاحتياطيه
 ⌔ ⍒ السيرفر / معلومات السيرفر 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔ ⍒ Ch TeAM -› [المسلم](https://t.me/yousef_labban1)
+⌔ ⍒ منهاج السنة -› [المسلم](https://www.youtube.com/channel/UCTjdBpWvEdgiorvWSeB3VwA)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
