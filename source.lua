@@ -6669,7 +6669,7 @@ local Num_Games = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender
 local Add_Mem = database:get(bot_id.."source:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
 local Total_Photp = (taha.total_count_ or 0)
 local Texting = {
-'🥺🖤 ملاك وناسيك بقروبنة ',
+'🥺🖤 ملاك وناسيك بقروبنا ',
 "☹️ حلغوم والله",
 "🐼❤️ طلق صوره ؟",
 "🥺 كيكك والله",
@@ -8504,7 +8504,7 @@ end
 return false
 end  
 if Devsource(msg) then
-local Text = '*⌔ ⍒  مرحبا بك في اوامر المطور الجاهزه*'
+local Text = '*⌔ ⍒  مرحبا بك في اوامر المطور الجاهزة*'
 local keyboard = {
 {'الاحصائيات 📉'},
 {'تفعيل التواصل 🔰','تعطيل التواصل ➗'},
