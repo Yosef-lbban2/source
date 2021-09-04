@@ -1723,27 +1723,27 @@ database:del(bot_id.."source:Lock:Video"..msg.chat_id_)
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح الفيديو")  
 return false
 end 
-if text == "قفل المتحركه" and Addictive(msg) then  
+if text == "قفل المتحركة" and Addictive(msg) then  
 database:set(bot_id.."source:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","⌔ ⍒ تم قفـل المتحركه")  
+Reply_Status(msg,msg.sender_user_id_,"lock","⌔ ⍒ تم قفـل المتحركة")  
 return false
 end
-if text == "قفل المتحركه بالتقيد" and Addictive(msg) then
+if text == "قفل المتحركة بالتقيد" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔ ⍒ تم قفـل المتحركه")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔ ⍒ تم قفـل المتحركة")  
 return false
 end 
-if text == "قفل المتحركه بالكتم" and Addictive(msg) then
+if text == "قفل المتحركة بالكتم" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔ ⍒ تم قفـل المتحركه")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔ ⍒ تم قفـل المتحركة")  
 return false
 end 
-if text == "قفل المتحركه بالطرد" and Addictive(msg) then
+if text == "قفل المتحركة بالطرد" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔ ⍒ تم قفـل المتحركه")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔ ⍒ تم قفـل المتحركة")  
 return false
 end 
-if text == "فتح المتحركه" and Addictive(msg) then  
+if text == "فتح المتحركة" and Addictive(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1754,7 +1754,7 @@ end
 return false
 end
 database:del(bot_id.."source:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح المتحركه")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح المتحركة")  
 return false
 end 
 if text == "قفل الالعاب" and Addictive(msg) then  
@@ -2227,9 +2227,9 @@ Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح التكر�
 return false
 end
 
-if text == ("مسح قائمه العام") and Devsource(msg) then
+if text == ("مسح قائمة العام") and Devsource(msg) then
 database:del(bot_id.."source:GBan:User")
-send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح قائمه العام")
+send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح قائمة العام")
 return false
 end
 if text == ("مسح المطورين") and Devsource(msg) then
@@ -2306,7 +2306,7 @@ end
 return false
 end
 database:del(bot_id.."source:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "⌔ ⍒  تم مـسح قائمه المكتومين ")
+send(msg.chat_id_, msg.id_, "⌔ ⍒  تم مـسح قائمة المكتومين ")
 end
 if text == "مسح المحظورين" and Addictive(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -2321,7 +2321,7 @@ end
 database:del(bot_id.."source:Ban:User"..msg.chat_id_)
 send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح المحظورين")
 end
-if text == ("قائمه العام") and Devsource(msg) then
+if text == ("قائمة العام") and Devsource(msg) then
 local list = database:smembers(bot_id.."source:GBan:User")
 t = "\n⌔ ⍒ قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
@@ -4473,7 +4473,7 @@ end
 return false  
 end
 
-if text == "مسح قائمه المنع" and Addictive(msg) then   
+if text == "مسح قائمة المنع" and Addictive(msg) then   
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4489,10 +4489,10 @@ database:del(bot_id.."source:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)
 database:del(bot_id.."source:Add:Filter:Rp2"..v..msg.chat_id_)  
 database:srem(bot_id.."source:List:Filter"..msg.chat_id_,v)  
 end  
-send(msg.chat_id_, msg.id_,"⌔ ⍒ تم مـسح قائمه المنع")  
+send(msg.chat_id_, msg.id_,"⌔ ⍒ تم مـسح قائمة المنع")  
 end
 
-if text == "قائمه المنع" and Addictive(msg) then  
+if text == "قائمة المنع" and Addictive(msg) then  
  if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4704,7 +4704,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."source:List:Cmd:Group:New"..msg.chat_id_.."")
-t = "⌔ ⍒ قائمه الاوامر المضافه  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
+t = "⌔ ⍒ قائمة الاوامر المضافه  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."source:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -5077,10 +5077,10 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ تم مـسح ردود المدير")
 end
 if text == ("ردود المدير") and Owner(msg) then
 local list = database:smembers(bot_id.."source:List:Manager"..msg.chat_id_.."")
-text = "⌔ ⍒ قائمه ردود المدير \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+text = "⌔ ⍒ قائمة ردود المدير \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."source:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
-db = "متحركه 🎭"
+db = "متحركة 🎭"
 elseif database:get(bot_id.."source:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
 db = "بصمه 📢"
 elseif database:get(bot_id.."source:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
@@ -5181,7 +5181,7 @@ return false
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."source:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '⌔ ⍒ الان ارسل الرد الذي تريد اضافته \n⌔ ⍒  قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n⌔ ⍒  يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
+send(msg.chat_id_, msg.id_, '⌔ ⍒ الان ارسل الرد الذي تريد اضافته \n⌔ ⍒  قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركة )\n⌔ ⍒  يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
 database:set(bot_id.."source:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true1")
 database:set(bot_id.."source:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:del(bot_id.."source:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
@@ -5197,7 +5197,7 @@ return false end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."source:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_.."") == "true2" then
-send(msg.chat_id_, msg.id_,"⌔ ⍒ تم ازالة الرد من قائمه الردود")
+send(msg.chat_id_, msg.id_,"⌔ ⍒ تم ازالة الرد من قائمة الردود")
 database:del(bot_id.."source:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
 database:del(bot_id.."source:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
 database:del(bot_id.."source:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
@@ -5288,7 +5288,7 @@ local list = database:smembers(bot_id.."source:List:Rd:Sudo")
 text = "\n⌔ ⍒ قائمة ردود المطور \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."source:Add:Rd:Sudo:Gif"..v) then
-db = "متحركه 🎭"
+db = "متحركة 🎭"
 elseif database:get(bot_id.."source:Add:Rd:Sudo:vico"..v) then
 db = "بصمه 📢"
 elseif database:get(bot_id.."source:Add:Rd:Sudo:stekr"..v) then
@@ -5372,7 +5372,7 @@ return false
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."source:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '⌔ ⍒ الان ارسل الرد الذي تريد اضافته \n⌔ ⍒  قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n⌔ ⍒  يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
+send(msg.chat_id_, msg.id_, '⌔ ⍒ الان ارسل الرد الذي تريد اضافته \n⌔ ⍒  قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركة )\n⌔ ⍒  يمكنك اضافه الى النص :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#name` > اسم المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات ')
 database:set(bot_id.."source:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_, "true1")
 database:set(bot_id.."source:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:sadd(bot_id.."source:List:Rd:Sudo", text)
@@ -5380,7 +5380,7 @@ return false end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."source:Set:On"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_,"⌔ ⍒ تم ازالة الرد من قائمه ردود المطور")
+send(msg.chat_id_, msg.id_,"⌔ ⍒ تم ازالة الرد من قائمة ردود المطور")
 list = {"Add:Rd:Sudo:Audio","Add:Rd:Sudo:File","Add:Rd:Sudo:Video","Add:Rd:Sudo:Photo","Add:Rd:Sudo:Text","Add:Rd:Sudo:stekr","Add:Rd:Sudo:vico","Add:Rd:Sudo:Gif"}
 for k,v in pairs(list) do
 database:del(bot_id..'source:'..v..text)
@@ -6045,7 +6045,7 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ الاذاعه معطله من قبل الم
 return false
 end
 database:setex(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركه, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
+send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركة, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
 return false
 end 
 if text=="اذاعه" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
@@ -6054,7 +6054,7 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ الاذاعه معطله من قبل الم
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركه, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
+send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركة, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
@@ -6063,7 +6063,7 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ الاذاعه معطله من قبل الم
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركه, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
+send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركة, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
@@ -6405,7 +6405,7 @@ local text =
 "\n".."⌔ ⍒ الكلايش ›› "..lock_spam..
 "\n".."⌔ ⍒ الكيبورد ›› "..lock_inlin..
 "\n".."⌔ ⍒ الاغاني ›› "..lock_vico..
-"\n".."⌔ ⍒ المتحركه ›› "..lock_gif..
+"\n".."⌔ ⍒ المتحركة ›› "..lock_gif..
 "\n".."⌔ ⍒ الملفات ›› "..lock_file..
 "\n".."⌔ ⍒ الدردشه ›› "..lock_text..
 "\n".."⌔ ⍒ الفيديو ›› "..lock_ved..
@@ -7380,7 +7380,7 @@ end
 return false
 end
 Teext = [[
-*⌔ ⍒ قائمه العاب البوت ↓↓*
+*⌔ ⍒ قائمة العاب البوت ↓↓*
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
 ⌔ ⍒ لعبة البات -› بات
 ⌔ ⍒ لعبة الامثله -› امثله
@@ -8028,7 +8028,7 @@ Text = [[
 ⌔ ⍒ الشارحه
 ⌔ ⍒ التعديل
 ⌔ ⍒ التثبيت
-⌔ ⍒ المتحركه
+⌔ ⍒ المتحركة
 ⌔ ⍒ الملفات
 ⌔ ⍒ الصور
 
@@ -8148,7 +8148,7 @@ Text = [[
 ⌔ ⍒ مسح الصلاحيات
 ⌔ ⍒ مسح الرابط
 
-⌔ ⍒ مسح قائمه المنع
+⌔ ⍒ مسح قائمة المنع
 ⌔ ⍒ مسح المحظورين
 ⌔ ⍒ مسح المميزين
 ⌔ ⍒ مسح المكتومين
@@ -8303,8 +8303,8 @@ Text = [[
 
 ⌔ ⍒ المطورين
 ⌔ ⍒ مسح المطورين
-⌔ ⍒ قائمه العام
-⌔ ⍒ مسح قائمه العام
+⌔ ⍒ قائمة العام
+⌔ ⍒ مسح قائمة العام
 
 ⌔ ⍒ غادر + الايدي
 ⌔ ⍒ تغير اسم للبوت
@@ -8515,7 +8515,7 @@ local keyboard = {
 {'اذاعه بالتوجيه 🔀','اذاعة خاص بالتوجيه 📥'},
 {'تفعيل الاذاعه 📨','تعطيل الاذاعه 🚫'},
 {'تفعيل المغادره 🔔','تعطيل المغادره ⚓'},
-{'مسح قائمه العام 📌','مسح المطورين 📋','قائمه العام ⛔'},
+{'مسح قائمة العام 📌','مسح المطورين 📋','قائمة العام ⛔'},
 {'حذف كليشة ستارت 🔗','تغير كليشه Start 📩'},
 {'تفعيل الاشتراك 🔭','تعطيل الاشتراك 📠'},
 {'تغير الاشتراك 🔌','حذف رسالة الاشتراك ⌨️'},
@@ -8585,7 +8585,7 @@ sendPhoto(id_user, msg.id_,msg.content_.photo_.sizes_[0].photo_.persistent_id_,(
 Text = '⌔ ⍒ تمت ارسال الصورة اليه .. '
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, msg.content_.animation_.animation_.persistent_id_)    
-Text = '⌔ ⍒ تمت ارسال المتحركه اليه .. '
+Text = '⌔ ⍒ تمت ارسال المتحركة اليه .. '
 elseif msg.content_.ID == 'MessageVoice' then    
 sendVoice(id_user, msg.id_, msg.content_.voice_.voice_.persistent_id_)    
 Text = '⌔ ⍒ تمت ارسال البصمه اليه .. '
@@ -8695,7 +8695,7 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ الاذاعه معطله من قبل الم
 return false
 end
 database:setex(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركه, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
+send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركة, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
 return false
 end 
 if text=="اذاعة عام 📬" and msg.reply_to_message_id_ == 0 then
@@ -8704,7 +8704,7 @@ send(msg.chat_id_, msg.id_,"⌔ ⍒ الاذاعه معطله من قبل الم
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركه, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
+send(msg.chat_id_, msg.id_,"⌔ ⍒ ارسل لي سواء ~ { ملصق, متحركة, صورة, رساله }\n⌔ ⍒ للخروج ارسل الغاء ") 
 return false
 end  
 if text=="اذاعه بالتوجيه 🔀" and msg.reply_to_message_id_ == 0  then
@@ -8874,16 +8874,16 @@ local texxt = string.match(text, "(.*)")
 database:set(bot_id..'text:ch:user',texxt)
 send(msg.chat_id_, msg.id_,'⌔ ⍒ تم تغيير رسالة الاشتراك ')
 end
-if text == ("مسح قائمه العام 📌") and Devsource(msg) then
+if text == ("مسح قائمة العام 📌") and Devsource(msg) then
 database:del(bot_id.."source:GBan:User")
-send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح قائمه العام")
+send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح قائمة العام")
 return false
 end
 if text == ("مسح المطورين 📋") and Devsource(msg) then
 database:del(bot_id.."source:Sudo:User")
 send(msg.chat_id_, msg.id_, "\n⌔ ⍒ تم مـسح قائمة المطورين")
 end
-if text == ("قائمه العام ⛔") and Devsource(msg) then
+if text == ("قائمة العام ⛔") and Devsource(msg) then
 local list = database:smembers(bot_id.."source:GBan:User")
 t = "\n⌔ ⍒ قائمة المحظورين عام \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
